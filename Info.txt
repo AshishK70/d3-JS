@@ -1,0 +1,20 @@
+D3 (or D3.js) is a free, open-source JavaScript library for visualizing data. Its low-level approach built on web standards offers unparalleled flexibility in authoring dynamic, data-driven graphics.
+
+
+D3 is a low-level toolbox
+
+D3 is not a charting library in the traditional sense. It has no concept of “charts”. When you visualize data with D3, you compose a variety of primitives.
+
+To make a stacked area chart, you might use
+
+a CSV parser to load data,
+a time scale for horizontal position (x),
+a linear scale for vertical position (y),
+an ordinal scale and categorical scheme for color,
+a stack layout for arranging values,
+an area shape with a linear curve for generating SVG path data,
+axes for documenting the position encodings, and
+selections for creating SVG elements.
+
+
+The name “D3” is short for data-driven documents, where documents refers to the Document Object Model (DOM) standard that represents the contents of a webpage. 
