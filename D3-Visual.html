@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 20px;
+    }
+
+    body {
+        background-color: black;
+        color: antiquewhite;
+    }
+</style>
+
+<body>
+
+</body>
+<script>
+    var dataArray = [10, 20, 30, 40, 50]
+
+    var canvas = d3.select('body')
+        .append('svg')
+        .attr('width', '60vw')
+        .attr('height', '60vh')
+        .style('background', '#dfdfdf');
+
+    var bar = canvas.selectAll('rect')
+        .data(dataArray)
+        .enter()
+        .append('rect')
+        .attr('width', function (data) {
+            return data * 10;
+        })
+        .attr('height', function (data) {
+            return data;
+        })
+        .attr('y', function (data, i) {
+            return i * 100;
+        });
+</script>
+
+</html>
