@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Basis
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.js"></script>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: antiquewhite;
+    }
+</style>
+
+<body>
+    <p class="hell">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magni maxime repellendus, consequatur
+        nulla iure
+        dignissimos voluptate, pariatur inventore exercitationem molestiae ut in obcaecati excepturi accusantium
+        expedita id, non eaque!</p>
+    <p class="ask">hello</p>
+
+</body>
+<script>
+    d3.select('p.ask').text("Hello D3 world");   //changing inner text of p tag with class ask
+    // 
+    console.log(d3); //checking d3 object and whats inside it 
+    d3.select('body')
+        .append('h3')
+        .style('background-color',"red")
+        .text("Data added with d3 in script")
+        .attr("data-id",'1')
+        //adding h3 element with d3.select('').append('') method
+</script>
+
+</html>
